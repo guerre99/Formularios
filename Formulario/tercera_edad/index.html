@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de la tercera edad de Entrepenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>El Club Viejuner</h1>
+    <img src="./assets/abueletes.jpg" alt="abuelos en bici">    
+    <h2>Formulario de admisión</h2>
+</header>
+<main>
+    <section id="Tu">
+        <fieldset>
+            <h3>Tú:</h3>
+            <form action="#formulario" id="formularioForm">
+                <label for="fname">Nombre:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Introduce nombre..." minlength="2"
+                        maxlenght="30" required autofocus>
+
+                    <label for="lname">Apellidos:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Introduce apellidos..." minlength="2"
+                        maxlenght="30" required>
+                    
+                    <label for="lage">Edad:</label>
+                    <input type="number" id="lage" name="lage" placeholder="Introduce edad..." min="1"
+                        max="120" required><br>
+
+                    <label for="sex">Sexo:</label><br>
+                    
+                    <label for="Masc"><input type="radio" id="masc" name="sex" value="Hombre" required>Hombre</label><br>
+                        
+                    <label for="Fem"><input type="radio" id="fem" name="sex" value="Mujer">Mujer</label><br>
+
+                    <label for="Others"><input type="radio" id="others" name="sex" value="Otro">Otros</label><br><br>
+
+                    <label><input type="checkbox" id="viejuner" value="viejuner" name="viejuner">Me siento viejuner</label><br><br>
+
+                    <label for="comments">Escribe algo sobre ti:</label><br>
+                    <textarea rows="2" cols="30" name="comments" wrap="hard"
+                        placeholder="Escribir aqui"></textarea><br>
+    
+        </fieldset><br>
+    
+        <fieldset>
+            <h3>Tus circunstancias:</h3>
+
+            <label for="fname">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Introduce email..." required><br><br>
+
+            <label for="tlf">Teléfono:</label>
+                <input type="tel" id="tlf" name="tlf" pattern="[0-9]{9}" placeholder="Introduce teléfono..." required><br>
+                
+        </fieldset><br>
+
+        <input type="submit" value="Enviar" tabindex="-1"><br>
+
+        <input type="reset" value="Resetear" tabindex="-1"><br>
+
+        </form>
+
+    </section>
+    
+</main>

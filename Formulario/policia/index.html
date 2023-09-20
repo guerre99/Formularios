@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policia Local de Entrepenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1><img src="./assets/sirena.png" alt="sirena">Formulario de robo de bicicletas<img src="./assets/sirena.png" alt="sirena"></h1>
+    <h3>Policia Local de Entrepenes</h3>
+</header>
+
+<main>
+    <form action="#formulario" id="formularioForm">
+        <fieldset>
+            <legend>Fecha del robo</legend>
+            <label for="dia">Día:</label>
+            <input type="date" id="dia" name="Dia" required>
+            <label for="hora">Hora:</label>
+            <input type="time" name="time" id="time" required>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la bicicleta</legend>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" required><br>
+            <label for="precio">Rango de precio (aproximado):</label><br>
+            <input type="range" name="precio" id="precio" min="0" max="1000" list="markers" step="100">
+                <datalist id="markers">
+                    <option value="0" label="0"></option>
+                    <option value="100" label="100"></option>
+                    <option value="200" label="200"></option>
+                    <option value="300" label="300"></option>
+                    <option value="400" label="400"></option>
+                    <option value="500" label="500"></option>
+                    <option value="600" label="600"></option>
+                    <option value="700" label="700"></option>
+                    <option value="800" label="800"></option>
+                    <option value="900" label="900"></option>
+                    <option value="1000" label="1000(+)"></option>
+                </datalist><br>
+            <label for="tipo">Tipo de bicicleta:</label>
+            <p>
+                <label for="Paseo"><input type="radio" name="tipo" value="paseo">Paseo:<br>
+                <select name="tipo" id="tipo">
+                    <option value="Señorial">Señorial</option>
+                    <option value="Anti">Anti-plebeyos</option>
+                    <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+                </select>
+                </label>
+            </p>
+            <p>
+                <label for="Montaña"><input type="radio" name="tipo" value="Montaña">Montaña:<br>
+                <select name="tipo" id="tipo">
+                    <option value="Gamusinos">Gamusinos</option>
+                    <option value="Hueleflores">Hueleflores premium</option>
+                    <option value="Fango">Fango lover</option>
+                </select>
+                </label>
+            </p>
+            <p>
+                <label for="Carreras"><input type="radio" name="tipo" value="Carreras">Carreras:<br>
+                <select name="tipo" id="tipo">
+                    <option value="Metroymedio">Metroymedio</option>
+                    <option value="Fluorescente">3 de la tarde. Fluorescente edition</option>
+                    <option value="Grupitors">Grupitors</option><br>
+                </select>
+                </label>
+            </p>
+            <label for="Accesorios">Accesorios</label><br>
+                <label for="ruedines"><input type="checkbox" name="ruedines" id="ruedines">Ruedines</label><br>
+                <label for="Pegatinas"><input type="checkbox" name="Pegatinas" id="Pegatinas">Pegatinas</label><br>
+                <label for="Cestita"><input type="checkbox" name="Cestita" id="Cestita">Cestita</label><br>
+                <label for="ruedines"><input type="checkbox" name="ruedines" id="ruedines">Ruedines</label><br>
+                <label for="ruedines"><input type="checkbox" name="ruedines" id="ruedines">Ruedines</label><br>
+                <label for="ruedines"><input type="checkbox" name="ruedines" id="ruedines">Ruedines</label><br><br>
+            <label for="marca">¿Qué marca era?</label><br>
+                <label for="specialized"><input type="checkbox" name="specialized" id="specialized" required unique>Specialized</label><br>
+                <label for="trek"><input type="checkbox" name="trek" id="trek">Trek</label><br>
+                <label for="merida"><input type="checkbox" name="merida" id="merida">Merida</label><br>
+                <label for="scott"><input type="checkbox" name="scott" id="scott">Scott</label><br>
+                <label for="giant"><input type="checkbox" name="giant" id="giant">Giant</label><br>
+                <label for="cube"><input type="checkbox" name="cube" id="cube">Cube</label><br>
+                <label for="lapierre"><input type="checkbox" name="lapierre" id="lapierre">Lapierre</label><br>
+                <label for="orbea"><input type="checkbox" name="orbea" id="orbea">Orbea</label><br>
+                <label for="cannondale"><input type="checkbox" name="cannondale" id="cannondale">Cannondale</label><br>
+                <label for="bmc"><input type="checkbox" name="bmc" id="bmc">Bmc</label><br>
+                <label for="canyon"><input type="checkbox" name="canyon" id="canyon">Canyon</label><br>
+                <label for="look"><input type="checkbox" name="look" id="look">Look</label><br>
+                <label for="protek"><input type="checkbox" name="protek" id="protek">Protek</label><br>
+                <label for="megamo"><input type="checkbox" name="megamo" id="megamo">Megamo</label><br>
+                <label for="pinarello"><input type="checkbox" name="pinarello" id="pinarello">Pinarello</label><br>
+                <label for="bianchi"><input type="checkbox" name="bianchi" id="bianchi">Bianchi</label><br>
+                <label for="bh"><input type="checkbox" name="bh" id="bh">Bh</label><br>
+                <label for="factor"><input type="checkbox" name="factor" id="factor">Factor</label><br>
+                <label for="ghost"><input type="checkbox" name="ghost" id="ghost">Ghost</label><br>
+                <label for="cervélo"><input type="checkbox" name="cervélo" id="cervelo">Cervélo</label><br>
+                <label for="argon"><input type="checkbox" name="argon" id="argon">Argon</label><br>
+        </fieldset>   
+
+        <input type="submit" value="Enviar" tabindex="-1"><br>
+
+        <input type="reset" value="Resetear" tabindex="-1"><br>
+       
+    </form>
+</main>
